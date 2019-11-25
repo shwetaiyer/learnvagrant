@@ -24,6 +24,9 @@ chkconfig mysqld on
 
 service mysqld start
 
+cd /vagrant
+sudo -u vagrant wget -q "https://raw.githubusercontent.com/shwetaiyer/learnvagrant/master/files/index.html" 
+
 mysqld -u root -e "SHOW DATABASES";
 
 
